@@ -22,4 +22,4 @@
 - [基本編](fundamental.md)
 - [物体認識・マニピュレーション編](manipulation.md)
 - [音声認識・ナビゲーション編](navigation.md)
-- [シユレーション編](simulation.md)
+- [シミュレーション編](simulation.md)
