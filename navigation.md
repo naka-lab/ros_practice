@@ -63,7 +63,7 @@
   - ロボットは自身の現在位置が分かってないので，`2D Pose Esitmate`で地図上の現在位置を設定
   - `2D Navi Goal`で目的地を指定すると目的地まで自律的に移動
     <img src="figs/nav_rviz.png" alt="代替テキスト" width="500">
-- [移動命令送信プログラム](https://github.com/naka-lab/ros_practice/raw/main/script/example_grammar.py)をダウンロードして，目的地の座標を書き換え実行してみましょう：`python navigation.py `
+- [移動命令送信プログラム](https://github.com/naka-lab/ros_practice/raw/main/script/navigation.py)をダウンロードして，目的地の座標を書き換え実行してみましょう：`python navigation.py `
 
 
 
