@@ -53,7 +53,7 @@
   roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
   ```
 
-- 起動したらlancherから起動した地図生成・地図保存・ナビゲーションや，書き換えた[移動命令送信プログラム](https://github.com/naka-lab/ros_practice/raw/main/script/example_grammar.py)を利用可能
+- 起動したらlancherから起動した地図生成・地図保存・ナビゲーションや，書き換えた[移動命令送信プログラム](https://github.com/naka-lab/ros_practice/raw/main/script/navigation.py)を利用可能
   <img src="figs/sim_turtle.png" alt="代替テキスト" width="800">
 
 
@@ -69,13 +69,11 @@
 ## Crane X7のGazeboシミュレータ
 
 - 実行（1行目のコマンドはvmwareでgazeboを使うためのおまじない）
-
   ```
   export SVGA_VGPU10=0
   roslaunch crane_x7_gazebo crane_x7_with_table.launch
   ```
-
-- Gazebo上のCrane X7を[プログラム](https://github.com/naka-lab/ros_practice/raw/main/script/cranex7_move_to_position.py)から操作可能
+- Gazebo上のCrane X7を[プログラム](https://github.com/naka-lab/ros_practice/raw/main/script/cranex7_move_to_position.py)から操作可能  
   <img src="figs/sim_crane_gazebo.png" alt="代替テキスト" width="500">
 
 
@@ -85,27 +83,19 @@
 カメラがなくても，認識した物体の情報をPublishすることで物体認識結果に応じた動作も検証可能
 
 - 仮想的なカメラの位置を設定
-
   ```
   rosrun tf static_transform_publisher 0 0 0 0 0 0 /base_link /camera_depth_optical_frame 100
   ```
-
 - [物体情報送信プログラム](https://github.com/naka-lab/ros_practice/raw/main/script/object_dummy_sender.py)を実行
-
   - 送信する情報を変更したい場合は以下の部分を書き換える
-
     ```
     label = 0           # 物体（ARマーカー）のID
     pos = (0.4, 0, 0)   # 物体のz, y, z座標
     topic_name = "/ar_marker_rec/object_info"    # トピック名
     ```
-
 - この状態でCraneX7のシミュレータを立ち上げ，[物体把持プログラム](https://github.com/naka-lab/ros_practice/raw/main/script/cranex7_grasp_object.py)を実行すると，物体が目の前にあるときと同じ動作が再現できる
-
 - 送信した物体の情報はrvizで確認可能
   <img src="figs/sim_obj.png" alt="代替テキスト" width="800">
-
-
 
 ## 音声認識
 

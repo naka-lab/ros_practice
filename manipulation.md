@@ -64,7 +64,7 @@
 ## [演習] カメラに写った物体の把持
 
 - ARマーカー認識，キャリブレーションプログラム，CRANE X7が実行されていることを確認する
-- ID:0のARマーカーをカメラに映るように下図のように配置
+- ID:0のARマーカーをカメラに映るように配置
 - [プログラム](https://github.com/naka-lab/ros_practice/raw/main/script/cranex7_grasp_object.py)ををダウンロードして実行：`python cranex7_grasp_object.py`
 
 
