@@ -23,4 +23,4 @@
 - [基本編](fundamental.md)
 - [物体認識・マニピュレーション編](manipulation.md)
 - [音声認識・ナビゲーション編](navigation.md)
-- [仮想マシン編](vitualmachine.md)
+- [シユレーション編](simulation.md)

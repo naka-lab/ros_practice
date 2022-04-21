@@ -66,3 +66,9 @@
 - ARマーカー認識，キャリブレーションプログラム，CRANE X7が実行されていることを確認する
 - ID:0のARマーカーをカメラに映るように下図のように配置
 - [プログラム](https://github.com/naka-lab/ros_practice/raw/main/script/cranex7_grasp_object.py)ををダウンロードして実行：`python cranex7_grasp_object.py`
+
+
+
+## 課題
+
+- ARマーカー認識とロボットアームを利用して何か作ってみましょう
