@@ -18,21 +18,15 @@
 ## [演習] ロボット内部のPCを準備
 
 - launcherから`general`の`roscore`の実行（すでに立ち上げてあれば不要）
-
 - ロボット内部PCにSSH接続（内部PCを遠隔で操作するためのコマンド）：`ssh pi@192.168.1.***`
-
   - `pi`: 内部PCのユーザ名（パスワードは`turtlebot`）
   - `192.168.1.***`: 内部PCのIPアドレス（ロボットによって***部分が異なるので注意）
   - SSHはUbuntuを利用する時に非常に便利なので使えるようになっておくといいです（lab infoにも使い方を記載しています）
-
   <img src="figs/ssh.png" alt="代替テキスト" width="500">
-
 - SSH接続したターミナルでロボット内部PCの時刻合わせ：`sudo –E ~/set_time.sh`
   <img src="figs/ssh_time.png" alt="代替テキスト" width="500">
-
 - SSH接続したターミナルでロボットノードを起動： `roslaunch turtlebot3_bringup turtlebot3_robot.launch` (**Tab補完**を利用する）
   <img src="figs/ssh_bringup.png" alt="代替テキスト" width="500">
-
 - ノートPCでロボット関連ノードが起動していることを確認：`rosnode list`
   <img src="figs/ssh_nodelist.png" alt="代替テキスト" width="500">
 
@@ -43,9 +37,9 @@
 ロボットが移動するためにロボット自身が環境中のどこにいるのか（自己位置）を知るよう必要がある．まず，自己位置を推定するための地図を作成する．
 
 - launcerから`Turtlebot3`の`地図生成`を実行
-- lancherから`Turtlebot3`の`キーボード入力`を実行
-  <img src="figs/slam_launch.png" alt="代替テキスト" width="500">
-- **ターミナル上**でw/a/s/d/xを入力しロボットを動かして地図を生成
+- lancherから`Turtlebot3`の`キーボード入力`を実行  
+　　<img src="figs/slam_launch.png" alt="代替テキスト" width="500">
+- **ターミナル上** でw/a/s/d/xを入力しロボットを動かして地図を生成
   - 左図がロボットをキー入力で操作するプログラム，右図が作成されている地図．移動していくと徐々に地図が作成される．
     <img src="figs/slam.png" alt="代替テキスト" width="800">
 
@@ -54,12 +48,8 @@
 ## [演習] 地図の保存と確認
 
 - lancherから`Turtlebot3`の`地図保存`を実行（Homeディレクトリにmapというファイル名で保存される）
-
-
   <img src="figs/map_save.png" alt="代替テキスト" width="800">
-
 - lancherから`Turtlebot3`の`地図表示`を実行
-
 - 地図画像上をドラッグすると，その位置と角度を確認できる
   <img src="figs/map_pos.png" alt="代替テキスト" width="800">
 
