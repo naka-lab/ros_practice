@@ -15,8 +15,8 @@
 
 - 右上の設定メニューから`有線設定`を開く
 - `ネットワークプロキシ`の設定を開く
-- `無効`を選択
-    <img src="figs/proxy_system.png" alt="代替テキスト" width="800">
+- `無効`を選択  
+  <img src="figs/proxy_system.png" alt="代替テキスト" width="800">
 
 
 
@@ -25,7 +25,7 @@
 - launcher.shを起動
 - `setting`の`bashrc編集`を起動
 - 該当箇所を`#`でコメントアウトして保存して閉じる
-- 立ち上げてるターミナルを閉じて，再度起動する（または`source ~/.bashrc`を実行する）
+- 立ち上げてるターミナルを閉じて，再度起動する（または`source ~/.bashrc`を実行する）  
   <img src="figs/proxy_bash.png" alt="代替テキスト" width="800">
 
 
