@@ -14,9 +14,6 @@
 - 追加した仮想マシン（Ubuntu 20.04 ROS ）を実行
   <img src="figs/vm_exec.png" alt="代替テキスト" width="800">
 - Ubuntuが起動するのでログインする
-  - ユーザー名：nakalab
-  - パスワード：nakamuralab
-
 
 
 ## シミュレータの利用
