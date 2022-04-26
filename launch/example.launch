@@ -1,0 +1,5 @@
+<launch>
+  <node name="program1" pkg="ros_practice" type="program1.py" output="screen"/>
+  <node name="program2" pkg="ros_practice" type="program2.py" output="screen" />
+  <node name="program3" pkg="ros_practice" type="program3.py" output="screen" />
+</launch>
