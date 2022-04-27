@@ -111,31 +111,24 @@
 ## プログラムの起動方法の色々
 
 - 普通の起動方法
-
   ```
   python ~/catkin_ws/src/ros_practice/script/program1.py
   ```
 
 - rosrunによる起動
-
   ```
   rosrun ros_practice program1.py 
   ```
-
   - パッケージ（ros_practice）内にあるプログラム（program.py）を実行
   - パッケージ：ROSの管理下にあるフォルダ（プログラム群）．通常`catkin_ws/src`以下にある．
   - やってることは「普通の起動方法」と同じ
 
 - roslaunchによる起動
-
   ```
   roslaunch ros_practice example.launch 
   ```
-
   - パッケージlaunchファイル（example.launch）に書かれたプログラムを一気に起動
-
   - `~/catkin_ws/src/ros_practice/launch/example.launch`：3つのプログラムを同時に起動するlaunchファイル
-
     ```
     <launch>
       <node name="program1" pkg="ros_practice" type="program1.py" output="screen"/>
@@ -143,7 +136,5 @@
       <node name="program3" pkg="ros_practice" type="program3.py" output="screen" />
     </launch>
     ```
-
-  - 複数プログラムを起動する以外にも色々な機能がある
-
+  - 複数プログラムの起動以外にも色々な機能がある
   - ROS対応の市販のロボットは，ロボットを使うためのプログラムを一気に起動するためのlaunchファイルが用意されている
