@@ -83,6 +83,7 @@
   ```
   rosrun tf static_transform_publisher 0 0 0 0 0 0 /base_link /camera_depth_optical_frame 100
   ```
+  
 - [物体情報送信プログラム](https://github.com/naka-lab/ros_practice/raw/main/script/object_dummy_sender.py)を実行
   - 送信する情報を変更したい場合は以下の部分を書き換える
     ```
@@ -90,9 +91,25 @@
     pos = (0.4, 0, 0)   # 物体のz, y, z座標
     topic_name = "/ar_marker_rec/object_info"    # トピック名
     ```
+  
 - この状態でCraneX7のシミュレータを立ち上げ，[物体把持プログラム](https://github.com/naka-lab/ros_practice/raw/main/script/cranex7_grasp_object.py)を実行すると，物体が目の前にあるときと同じ動作が再現できる
+
 - 送信した物体の情報はrvizで確認可能
   <img src="figs/sim_obj.png" alt="代替テキスト" width="800">
+
+
+
+## Webカメラで物体認識
+
+- 仮想マシン起動前に仮想マシン設定の「USBの互換性」を`USB3.1`にする
+  <img src="figs/webcam_usb.png" alt="代替テキスト" width="800">
+- 仮想マシンを起動して，Webカメラを仮想マシンへ接続
+  <img src="figs/webcam_connect.png" alt="代替テキスト" width="800">
+- lancerの`vision`から`Webカメラ`を起動
+  <img src="figs/webcam_launch.png" alt="代替テキスト" width="500">
+- この状態で`ARマーカー認識`を起動すれば，Webカメラを利用したARマーカーの認識が可能
+
+
 
 ## 音声認識
 
