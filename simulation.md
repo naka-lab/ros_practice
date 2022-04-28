@@ -103,9 +103,9 @@
 
 - 仮想マシン起動前に仮想マシン設定の「USBの互換性」を`USB3.1`にする
   <img src="figs/webcam_usb.png" alt="代替テキスト" width="800">
-- 仮想マシンを起動して，Webカメラを仮想マシンへ接続
+- 仮想マシンを起動して，Webカメラを仮想マシンへ接続（カメラの名称は環境によって異なります）
   <img src="figs/webcam_connect.png" alt="代替テキスト" width="800">
-- lancerの`vision`から`Webカメラ`を起動
+- lancherの`vision`から`Webカメラ`を起動  
   <img src="figs/webcam_launch.png" alt="代替テキスト" width="500">
 - この状態で`ARマーカー認識`を起動すれば，Webカメラを利用したARマーカーの認識が可能
 
