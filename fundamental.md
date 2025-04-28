@@ -101,7 +101,7 @@
   <img src="figs/topicinfo.png" alt="代替テキスト" width="500">
 - そのトピックではどんなメッセージがやり取りされてるか：`rostopic echo /chatter` (Tab補完を使いましょう)
   <img src="figs/topicecho.png" alt="代替テキスト" width="500">
-- メッセージの送信：`rostopic pub  /chatter  std_msgs/String  “data: ’test’”`  (Tabを**連打**しましょう)
+- メッセージの送信：`rostopic pub  /chatter  std_msgs/String  “data:’test’”`  (Tabを**連打**しましょう)
 
   - (`rostopic pub  (トピック名)  (トピックの型)  (データ)`)
     <img src="figs/topicpub.png" alt="代替テキスト" width="800">
